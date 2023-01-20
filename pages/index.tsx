@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import { BiUserPlus } from 'react-icons/bi';
+import Table from '../components/table';
+import Form from '../components/form';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,8 +24,14 @@ export default function Home() {
               Add Employee <span className='px-1'><BiUserPlus size={23}></BiUserPlus></span>
             </button>
           </div>
+        </div>
 
+        <div className='container mx-auto py-5'>
+          <Form></Form>
+        </div>
 
+        <div className='container mx-auto'>
+          <Table></Table>
         </div>
       </main>
     </section>
